@@ -27,11 +27,13 @@
 *!*	                oFSO = CREATEOBJECT("Scripting.FileSystemObject") 
 *!*					oFSO.DeleteFolder("D:\SFS_v1.2\sunat_archivos\sfs\RPTA\dummy",.t.) 
                    
-               
+               IF FILE(  taFiles(lnFileCount))
+					DELETE FILE (taFiles(lnFileCount))
+				ENDIF	
                 
-                oFSO = CREATEOBJECT("Scripting.FileSystemObject") 
-				oFSO.DeleteFolder(taFiles(lnFileCount)) 		
-							
+*!*	                oFSO = CREATEOBJECT("Scripting.FileSystemObject") 
+*!*					oFSO.DeleteFolder(taFiles(lnFileCount)) 		
+*!*								
                 
             ENDFOR
 

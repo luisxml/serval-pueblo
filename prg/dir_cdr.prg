@@ -25,10 +25,10 @@
                 taFiles(lnFileCount)    = tcDir +laFiles(I,1)              
                 
 *!*	                oFSO = CREATEOBJECT("Scripting.FileSystemObject") 
-*!*					oFSO.DeleteFolder("D:\SFS_v1.2\sunat_archivos\sfs\RPTA\dummy",.t.) 
+*!*					oFSO.DeleteFolder("D:\SFS_v1.3.2\sunat_archivos\sfs\RPTA\dummy",.t.) 
                    
                 cMiZip 	  =   taFiles(lnFileCount)
-				cDirDesti = '\\'+Vpc_server+'\SFS_v1.2\sunat_archivos\sfs\RPTA\'
+				cDirDesti = '\\'+Vpc_server+'\SFS_v1.3.2\sunat_archivos\sfs\RPTA\'
 				
 
 				oShell = Createobject("Shell.Application") 
@@ -36,14 +36,14 @@
 				    oShell.NameSpace(cDirDesti).CopyHere(oArchi) 
 				EndFor 
                 
-*!*	                IF FILE('\\'+Vpc_server+'\SFS_v1.2\sunat_archivos\sfs\RPTA\dummy')
+*!*	                IF FILE('\\'+Vpc_server+'\SFS_v1.3.2\sunat_archivos\sfs\RPTA\dummy')
 *!*	                	oFSO = CREATEOBJECT("Scripting.FileSystemObject") 
-*!*						oFSO.DeleteFolder('\\'+Vpc_server+'\SFS_v1.2\sunat_archivos\sfs\RPTA\dummy',.t.) 		
+*!*						oFSO.DeleteFolder('\\'+Vpc_server+'\SFS_v1.3.2\sunat_archivos\sfs\RPTA\dummy',.t.) 		
 *!*					ENDIF
-				Vlc_dir = DIRECTORY('\\'+Vpc_server+'\SFS_v1.2\sunat_archivos\sfs\RPTA\dummy')
+				Vlc_dir = DIRECTORY('\\'+Vpc_server+'\SFS_v1.3.2\sunat_archivos\sfs\RPTA\dummy')
 				IF Vlc_dir = .t.
                 	oFSO = CREATEOBJECT("Scripting.FileSystemObject") 
-					oFSO.DeleteFolder('\\'+Vpc_server+'\SFS_v1.2\sunat_archivos\sfs\RPTA\dummy',.t.) 		
+					oFSO.DeleteFolder('\\'+Vpc_server+'\SFS_v1.3.2\sunat_archivos\sfs\RPTA\dummy',.t.) 		
 				ENDIF	
 							
                 

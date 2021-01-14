@@ -36,10 +36,15 @@
 				    oShell.NameSpace(cDirDesti).CopyHere(oArchi) 
 				EndFor 
                 
-                IF FILE('\\'+Vpc_server+'\SFS_v1.2\sunat_archivos\sfs\RPTA\dummy')
+*!*	                IF FILE('\\'+Vpc_server+'\SFS_v1.2\sunat_archivos\sfs\RPTA\dummy')
+*!*	                	oFSO = CREATEOBJECT("Scripting.FileSystemObject") 
+*!*						oFSO.DeleteFolder('\\'+Vpc_server+'\SFS_v1.2\sunat_archivos\sfs\RPTA\dummy',.t.) 		
+*!*					ENDIF
+				Vlc_dir = DIRECTORY('\\'+Vpc_server+'\SFS_v1.2\sunat_archivos\sfs\RPTA\dummy')
+				IF Vlc_dir = .t.
                 	oFSO = CREATEOBJECT("Scripting.FileSystemObject") 
 					oFSO.DeleteFolder('\\'+Vpc_server+'\SFS_v1.2\sunat_archivos\sfs\RPTA\dummy',.t.) 		
-				ENDIF
+				ENDIF	
 							
                 
             ENDFOR

@@ -25,7 +25,7 @@
                 taFiles(lnFileCount)    = tcDir +laFiles(I,1)              
                 
 *!*	                oFSO = CREATEOBJECT("Scripting.FileSystemObject") 
-*!*					oFSO.DeleteFolder("D:\SFS_v1.2\sunat_archivos\sfs\RPTA\dummy",.t.) 
+*!*					oFSO.DeleteFolder("D:\SFS_v1.3.2\sunat_archivos\sfs\RPTA\dummy",.t.) 
                    
                IF FILE(  taFiles(lnFileCount))
 					DELETE FILE (taFiles(lnFileCount))

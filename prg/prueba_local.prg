@@ -76,10 +76,10 @@ SET DEFAULT TO FULLPATH(lcAppDir)
 *OPEN DATABASE FULLPATH(lcAppDir+"data\SERVAL.dbc")
 Vgc_almatrab=1
 Vgc_usuario="12345678"
-Vgc_usuario="3"
+Vgc_usuario="1"
 Vgc_clic =0
 Vgn_opt=1
-Vgn_tipousu=5
+Vgn_tipousu=3
 
 ****VERIFICAR EL SERIAL DEL DISCO
 	Vlc_disco = LEFT( lcAppDir, 2)
